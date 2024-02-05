@@ -1,11 +1,29 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    /* padding: 0;
+    box-sizing: border-box; */
   }
-  
-  h1, h2 {
-    text-align: center;
+  /* .container{
+     background-color: rgb(217, 245, 245);
+     height: auto;
+  }  */
+  .header{
+    background-color: black;
+    color: white;
+    height: 50px;
   }
+ 
+  .header h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .expenses-list h2{
+  text-align: center;
+ 
+ }
   
   .input-section {
     display: flex;
@@ -13,6 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background-color: rgb(165, 165, 165);
   }
   
   .input-section label {
@@ -23,6 +42,10 @@ body {
   .input-section input[type="number"], .input-section input[type="date"] {
     padding: 5px;
     margin-right: 10px;
+    border-radius: 5px;
+  }
+  #category-select{
+    border-radius: 5px;
   }
   
   .input-section button {
@@ -38,20 +61,24 @@ body {
     margin: 20px;
   }
   
+
   table {
     width: 100%;
     border-collapse: collapse;
+    /* border: 1px solid black; */
   }
   
   th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    /* border: 1px solid black; */
   }
   
   th {
     background-color: #4CAF50;
     color: white;
+    
   }
   
   tfoot td {

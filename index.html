@@ -8,7 +8,10 @@
     <title>Expense Tracker App</title>
 </head>
 <body>
-    <h1>Expense Tracker App</h1>
+    <div class="header">
+        <h1>Expense Tracker App</h1>
+    </div>
+   
     <div class="input-section">
         <label for="category-select">Category:</label>
         <select id="category-select">
@@ -17,14 +20,16 @@
             <option value="Transport">Transport</option>
             <option value="Relaxing">Relaxing</option>
         </select>
-        <label for="amount-input">Amount:</label>
-        <input type="number" id="amount-input">
+        <label for="amount-input" >Amount:</label>
+        <input type="number" id="amount-input" placeholder="Enter amount">
         <label for="date-input">Date:</label>
         <input type="date" id="date-input">
         <button id="add-btn">Add</button>
     </div>
     <div class="expenses-list">
+       <div class="header2">
         <h2>Expenses List</h2>
+       </div>
         <table>
             <thead>
                 <tr>
